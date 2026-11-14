@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>আমার ফটোকার্ড</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>নিজের ফটোকার্ড তৈরি করুন</h1>
+  <div class="editor">
+    <label>আপনার নাম লিখুন</label>
+    <input type="text" id="nameInput" placeholder="আপনার নাম">
+
+    <label>নিজের ছবি আপলোড করুন</label>
+    <input type="file" id="photoInput" accept="image/*">
+
+    <label>ছবির আকার</label>
+    <input type="range" id="zoom" min="70" max="180" value="100">
+
+    <label>নামের আকার</label>
+    <input type="range" id="nameSize" min="18" max="54" value="34">
+
+    <canvas id="cardCanvas" width="1568" height="1656"></canvas>
+
+    <button id="downloadBtn">ফটোকার্ড ডাউনলোড</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
